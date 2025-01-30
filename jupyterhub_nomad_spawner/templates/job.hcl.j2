@@ -41,6 +41,7 @@ job "{{ job_name }}" {
         network {
             port "notebook" {
                 to = 8888
+                host_network = "private"
             }
         }
 
